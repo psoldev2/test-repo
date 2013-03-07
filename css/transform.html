@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+	<title>
+		Untitled 2
+	</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("area").mousemove(function(e){
+            var x = e.pageX - this.offsetLeft;
+            var y = e.pageY - this.offsetTop;
+            $('#status').html($(this).attr("title"));
+            });
+        $("area").mouseout(function(){
+            $('#status').html("");
+        });
+    });
+    </script>
+</head>
+<style>body{
+    padding:0;margin: 0;
+}</style>
+<body>
+<img style="margin: 10px auto;display: block;" src="second_page_03.png" usemap="#green" border="0" />
+
+<map name="green">
+<!--<area shape="polygon" coords="19,44,45,11,87,37,82,76,49,98" href="http://www.trees.com/save.html">-->
+<area id="poly" shape="poly" coords="222,0,448,283,0,283" href="javascript:clicked_on('1');" title="1" alt="Triangle" style="background: #c6c6c6;"/>
+
+<area id="poly" shape="poly" coords="322,1,770,1,548,284" href="javascript:clicked_on('2');" title="2" alt="Triangle" style="background: #c6c6c6;"/>
+
+<area id="poly" shape="poly" coords="873,1,1097,283,649,284" href="javascript:clicked_on('3');" title="3" alt="Triangle" style="background: #c6c6c6;"/>
+
+<area id="poly" shape="poly" coords="0,363,450,363,227,648" href="javascript:clicked_on('4');" title="4" alt="Triangle" style="background: #c6c6c6;"/>
+
+<area id="poly" shape="poly" coords="551,363,776,647,328,648" href="javascript:clicked_on('5');" title="5" alt="Triangle" style="background: #c6c6c6;"/>
+
+<area id="poly" shape="poly" coords="648,363,1097,364,875,648" href="javascript:clicked_on('6');" title="6" alt="Triangle" style="background: #c6c6c6;"/>
+</map>
+<span id="status" style="position: absolute;top: 0;"></span>
+</body>
+
+</html>

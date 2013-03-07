@@ -13,10 +13,10 @@ body{
       position:relative;width: 100%;
 }
 .cat-name{
- left: 0;
+ left: 55px;
     position: absolute;
     text-align: center;
-    top: 87px;
+    top: 88px;
     width: 100%;
 }
 .top-txt{
